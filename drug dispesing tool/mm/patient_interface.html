@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Interface</title>
+  <style>
+    body {
+      background-image: url(/images/page.jpg);
+      background-color: #333;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Patient Interface</h1>
+    <h2>Patient Registration Form</h2>
+    <form action="process_form.php" method="POST">
+        <label for="SSN">SSN:</label>
+        <input type="text" name="SSN" id="SSN" required><br><br>
+        
+        <label for="firstname">firstname:</label>
+        <input type="text" name="firstname" id="firstname" required><br><br>
+        
+        <label for="lastname">lastname:</label>
+        <input type="text" name="lastname" id="lastname" required><br><br>
+        
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        
+        <label for="AGE">AGE:</label>
+        <input type="number" name="AGE" id="AGE" required><br><br>
+        
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
+

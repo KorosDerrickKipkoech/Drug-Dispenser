@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drug Dispensing Tool</title>
+  <style>
+    body {
+      background-image: url(/images/page.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    .button-container {
+      margin-top: 30px;
+    }
+
+    .button-container input[type="button"] {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .exit-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Drug Dispensing Tool</h1>
+
+  <div class="button-container">
+    <input type="button" value="Doctor" onclick="location.href='http://localhost/Doctor%20Login/Login-System-PHP-and-MYSQL/'">
+    <input type="button" value="Patient" onclick="location.href='http://localhost/Drug%20Dispensing%20tool/'">
+    <input type="button" value="Pharmacist" onclick="location.href='pharmacist_interface.html'">
+    <input type="button" value="Supervisor" onclick="location.href='supervisor_interface.html'">
+  </div>
+
+  <button class="exit-button" onclick="window.close()">Exit</button>
+</body>
+</html>
